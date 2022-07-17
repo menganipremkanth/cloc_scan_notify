@@ -9,9 +9,15 @@ from email import encoders
 import os
 import sys
 import subprocess
+import platform
 
 fromaddr = "mengani.premkanth@gmail.com"
-toaddr = input('Please enter the email address to which the scan result need to be sent to:  \n')
+platform_v = platform.system()
+if platform_v is 'Windows':
+    toaddr = str(raw_input('Please enter the email address to which the scan results need to be sent to: \n'))
+else:
+    toaddr = input('Please enter the email address to which the scan result need to be sent to:  \n')
+
 ases_userid = os.environ.get('ases_uname')
 ases_pass = os.environ.get('ases_pass')
 
@@ -34,7 +40,10 @@ body = "Please find attached cloc scan results"
 msg.attach(MIMEText(body, 'plain'))
 
 # open the file to be sent
-restatus = subprocess.call(["./cloc", sys.argv[1], "--out", sys.argv[2]])
+if platform_v is 'Windows':
+    restatus =  subprocess.call(["cloc-1.94.exe", sys.argv[1], "--out", sys.argv[2]])
+else:
+    restatus = subprocess.call(["./cloc", sys.argv[1], "--out", sys.argv[2]])
 attachment = open(sys.argv[2], "rb")
 
 # instance of MIMEBase and named as p
@@ -65,4 +74,3 @@ s.sendmail(fromaddr, toaddr, text)
 
 # terminating the session
 s.quit()
-
