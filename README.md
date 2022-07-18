@@ -5,8 +5,12 @@ python script to run cloc and send results to given email ID.
 
 USAGE:
 Python cloc_scan.py <repo/directory or file to be scanned> <output CSV file name>
+
+
   
 example 1:
+  
+  
 ![Screen Shot 2022-07-18 at 9 38 45 AM](https://user-images.githubusercontent.com/7415579/179444078-230102fe-56db-4bbb-8037-dd91a63f35df.png)
 
 ---------------
@@ -23,7 +27,8 @@ example 2(Windows):
 
 ---------
 
-![Screen Shot 2022-07-18 at 9 47 37 AM](https://user-images.githubusercontent.com/7415579/179444832-0404e09e-9bc2-4849-9a41-310cb3c05376.png)
+![Screen Shot 2022-07-18 at 9 48 49 AM](https://user-images.githubusercontent.com/7415579/179444962-f73bdeee-e132-4560-a7fd-adb48bfde5f8.png)
+
 
 
 
