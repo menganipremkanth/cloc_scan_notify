@@ -13,7 +13,7 @@ import platform
 
 fromaddr = "mengani.premkanth@gmail.com"
 platform_v = platform.system()
-if platform_v is 'Windows':
+if int(platform.python_version().split('.')[0]) < 3:
     toaddr = str(raw_input('Please enter the email address to which the scan results need to be sent to: \n'))
 else:
     toaddr = input('Please enter the email address to which the scan result need to be sent to:  \n')
@@ -74,3 +74,4 @@ s.sendmail(fromaddr, toaddr, text)
 
 # terminating the session
 s.quit()
+
