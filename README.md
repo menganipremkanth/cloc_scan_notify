@@ -4,6 +4,9 @@ python script to run cloc and send results to given email ID.
 **This script tested on MAC and Windows 10 , it works on both. It also works with both Python 2 and Python 3 versions.
 
 USAGE:
+
+
+
 Python cloc_scan.py <repo/directory or file to be scanned> <output CSV file name>
 
 
@@ -36,21 +39,22 @@ example 2(Windows):
 
 References,
 
-1) Cloc:cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+1) Cloc:
+cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
 
 https://github.com/AlDanial/cloc
 
-3)What is Amazon SES?
+2)What is Amazon SES?
 Amazon Simple Email Service (SES) is a cloud-based email service that provides cost-effective, flexible and scalable way for businesses of all sizes to                                              keep in contact with their customers through email.
 https://docs.aws.amazon.com/ses/latest/dg/Welcome.html
 
-2)https://www.geeksforgeeks.org/send-mail-attachment-gmail-account-using-python/
+3)https://www.geeksforgeeks.org/send-mail-attachment-gmail-account-using-python/
 
-3)Watch "How to Send Emails Using Python - Plain Text, Adding Attachments, HTML Emails, and More" on YouTube
+4)Watch "How to Send Emails Using Python - Plain Text, Adding Attachments, HTML Emails, and More" on YouTube
 https://youtu.be/JRCJ6RtE3xU
 
-4)Watch "Send Emails with Python & Amazon SES" on YouTube
+5)Watch "Send Emails with Python & Amazon SES" on YouTube
 https://youtu.be/nKNqNrdUtZU
 
-5)Watch "Python Quick Tip: Hiding Passwords and Secret Keys in Environment Variables (Windows)" on YouTube
+6)Watch "Python Quick Tip: Hiding Passwords and Secret Keys in Environment Variables (Windows)" on YouTube
 https://youtu.be/IolxqkL7cD8
