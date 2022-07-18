@@ -3,7 +3,10 @@ python script to run cloc and send results to given email ID.
 
 **This script tested on MAC and Windows 10 , it works on both. It also works with both Python 2 and Python 3 versions.
 
-USAGE: python cloc_scan.py <file or dir or repo to be scanned> <output csv filename>
+USAGE: 
+
+![Screen Shot 2022-07-18 at 10 01 25 AM](https://user-images.githubusercontent.com/7415579/179445689-3835a4c5-5646-4ab0-b02d-2e245cc0e1f4.png)
+
   
 
 example 1:
